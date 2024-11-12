@@ -1,0 +1,22 @@
+{
+  "name": "ts-fibonacci-app",
+  "version": "1.0.0",
+  "description": "fibonacci number timer and finder app",
+  "main": "main.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "dev": "npm run clean && vite",
+    "build": "npm run clean && vite build"
+  },
+  "author": "kosarev",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.17.13",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.2.2",
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
