@@ -1,4 +1,4 @@
-import { fibonacciRecursive, fibonacciMemoized } from './fibonacci';
+import { fibonacciMemoized } from './fibonacci';
 import { measureTime } from './performance';
 
 // Анализ и вывод результатов
@@ -10,13 +10,13 @@ const performAnalysis = () => {
     return;
   }
   
-  const recursiveTime = measureTime(fibonacciRecursive, n);
   const memoizedTime = measureTime(fibonacciMemoized, n);
+  const memoizedResult = fibonacciMemoized(n);
   
   const outputMessage = `
     Результаты для n = ${n}:<br>
-    Рекурсивный метод: ${recursiveTime} мс<br>
-    Мемоизированный метод: ${memoizedTime} мс
+    Число фибоначчи: ${memoizedResult}<br>
+    Время вычисления: ${memoizedTime} мс
   `;
   
   displayOutput(outputMessage);
